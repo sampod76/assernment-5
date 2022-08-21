@@ -8,7 +8,12 @@
     <title>FIFI FOOTBALL</title>
     <link rel="icon" type="image/x-icon" href="IMAGE/football-svgrepo-com.svg">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
     <style>
+       
+
         button:disabled,
         button[disabled] {
             border: 1px solid #999999;
@@ -17,15 +22,18 @@
         }
 
         #lext-img {
-            padding-top:em;
+            padding-top: 1em;
             -webkit-transform: scaleX(-1);
             transform: scaleX(-1);
+        }
+        body{
+            font-family: 'DM Serif Display', serif;
         }
     </style>
 </head>
 </head>
 
-<body class="bg-slate-600 container mx-auto px-4 text-white font-semibold">
+<body class="bg-slate-600 container mx-auto px-4 text-white ">
     <header class="bg-black flex ">
         <div>
             <img class="pt-5 w-full h-full" src="IMAGE/Group 12.png" alt="">
@@ -38,7 +46,7 @@
         </div>
 
         <div>
-            <img id="lext-img" src="IMAGE/Group 12.png" alt="">
+            <img class="pt-5 w-full h-full" id="lext-img" src="IMAGE/Group 12.png" alt="">
         </div>
 
 
@@ -66,7 +74,7 @@
                         </div>
                         <button id="btn-Neymar"
                             class="bg-sky-500/100 text-center py-2 my-5 w-full rounded-lg flex mx-auto " type="submit"
-                            onclick="selectPlayer(this);this.disabled = true" >
+                            onclick="selectPlayer(this);this.disabled = true">
                             <p class="flex mx-auto">SELECT</p>
                         </button>
                     </div>
@@ -90,7 +98,7 @@
                         </div>
                         <button id="btn-Neymar"
                             class="bg-sky-500/100 text-center py-2 my-5 w-full rounded-lg flex mx-auto " type="submit"
-                            onclick="selectPlayer(this);this.disabled = true" >
+                            onclick="selectPlayer(this);this.disabled = true">
                             <p class="flex mx-auto">SELECT</p>
                         </button>
                     </div>
@@ -114,7 +122,7 @@
                         </div>
                         <button id="btn-Neymar"
                             class="bg-sky-500/100 text-center py-2 my-5 w-full rounded-lg flex mx-auto " type="submit"
-                            onclick="selectPlayer(this);this.disabled = true" >
+                            onclick="selectPlayer(this);this.disabled = true">
                             <p class="flex mx-auto">SELECT</p>
                         </button>
                     </div>
@@ -173,7 +181,7 @@
                             class=" text-center  font-semibold mx-auto mt-5 text-2xl  text-white dark:text-gray-400">
                             Renato Sanches
                         </h1>
-                        <div class="flex justify-center  ">
+                        <div class="flex justify-center">
                             <h3 class="text-white">
                                 52 Goals :
                             </h3>
@@ -224,7 +232,7 @@
                             <h3 class="text-lg text-white mt-2">Per Player</h3>
                             <input id="Per-Player-fuild"
                                 class="w-40 bg-slate-400 rounded-lg text-white font-semibold text" type="tel" name=""
-                                 onfocus="this.value=''"  value="0">
+                                onfocus="this.value=''" value="0">
                         </div>
                         <button id="btn-Calculate"
                             class="bg-sky-500/100 text-center py-2 my-5 w-full rounded-lg flex mx-auto " type="submit">
@@ -234,12 +242,12 @@
                         <div class="flex justify-between  my-3">
                             <h3 class="text-lg text-white mt-2">Manager</h3>
                             <input id="Manager-fuild" class="w-40 bg-slate-400 rounded-lg text-white font-semibold text"
-                                type="tel" name=""  onfocus="this.value=''"  value="0">
+                                type="tel" name="" onfocus="this.value=''" value="0">
                         </div>
                         <div class="flex justify-between  my-3">
                             <h3 class="text-lg text-white mt-2">Coach</h3>
                             <input id="Coach-fuild" class="w-40 bg-slate-400 rounded-lg text-white font-semibold text"
-                                type="tel" name=""  onfocus="this.value=''"  value="0">
+                                type="tel" name="" onfocus="this.value=''" value="0">
                         </div>
                         <button id="btn-Calculate-total"
                             class="bg-sky-500/100 text-center py-2 my-5 w-full rounded-lg flex mx-auto " type="submit">
@@ -278,7 +286,7 @@
                                 30 Goals :
                             </h3>
                             <h3 class="text-white">
-                                140 Assist
+                                150 Assist
                             </h3>
                         </div>
                         <button id="btn-Neymar"
